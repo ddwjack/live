@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title></title>
+</head>
+<body>
+    <div class="wrapper" id="mymodify">
+        <header class="head_vid" >
+            <div class="center">
+                <p><i class="modifyFan" id="p_fan"></i>修改认证</p>
+                <a data-t="myxuigai" class="A_next" href="javascript:void(0)">提交</a>
+            </div>
+        </header>
+        <section class="sec_zbrz">
+            <div class="rz_cont">
+                <h3 class="H3_bu">认证头像</h3>
+                <p class="center">
+                    <a id="divCrop" style="position: relative;display: inline-block;" href="javascript:void(0)">
+                        <img style="width: 74px;height: 74px;border-radius: 4px;" id="xgportr" src="images/register/toux.png" alt="">
+                        <input id="onle1" class="rz_file" type="file" accept="image/*" />
+                        <!-- <input id="onle1" class="rz_file" onchange="myprota(1)" type="file" accept="image/*"> -->
+                        <!-- <input id="onle1" class="rz_file" onchange="myprota(1)" type="file" accept="image/*"> -->
+                    </a>
+                </p>
+            </div>
+            <div id="imgCrop" style="width:200px;height:200px;border:1px solid #ccc;overflow:hidden;display: none;margin:0 auto;">
+                <img style="width:auto;height: auto;" src="images/register/toux.png" alt="">
+            </div>
+            
+            <p id="save" style="font-size: 15px;color: #657786;font-weight: 600;text-align: center;display: none;">保存</p>
+            <!-- <div id="imgShow"></div> -->
+            <div class="rz_cont">
+                <h3 class="H3_bu">认证图片<span class="sp_next">(必填)</span></h3>
+                <div class="dp_img">
+                    <p class="w49 link p_lefd center">
+                        <img id="onsh1" style="width:40%;" src="images/register/zongimg.png" alt="">
+                        <!-- <img id="im_fm" style="width:50%;" src="images/register/zongimg.png" alt=""> -->
+                        <input id="onfi1" class="rz_file" onchange="ongepicxg(1)" type="file" accept="image/*">
+                    </p>
+                    <!-- <p class="w49 link">
+                        <img id="onsh2" src="images/register/heng.png" alt="">
+                        <input id="onfi2" class="rz_file" onchange="ongepicxg(2)" type="file" accept="image/*">
+                    </p> -->
+                </div>
+                <div class="div_xc">
+                    <p class="p_xcImg">相册&nbsp;&nbsp;(最多9张)</p>
+                    <!-- <ul id="img_list">
+                        <li id="li_append" class="li_xc_img">
+                            <img id="hide1" src="images/register/Add.png" alt=""> 
+                            <img id="shows1" class="img_s1" src="" alt=""> 
+                            <input id="file1" class="file" onchange="gepicxg(1)" type="file" accept="image/png, image/jpeg, image/gif, image/jpg">
+                        </li>
+                    </ul> -->
+                    <ul class="link" style="padding-bottom: 10px;">
+                        <li id="uploadBtt" class="li_img_xg">
+                            <img src="images/register/Add.png" alt="">
+                            <input class="uploadImg" type="file" name="file" id="file">
+                        </li>
+                    </ul>
+                    <ul style="display: initial;" id="li_anchImg">
+                    
+                    </ul>
+                    <p id="p_noImg"></p>
+                </div>
+            </div>
+            <p class="p_clea"></p>
+            <div class="rz_cont pabot30">
+                <h3 class="H3_bu">认证视频<span id="i_xcsub" class="sp_next fr"><i class="fl i_wei i_but"></i>下次提交</span></h3>
+                <!-- <p class="center"><img style="width:40%;" src="images/register/zong.png" alt=""></p> -->
+                <div id="content">
+                    <p class="_p"><span id="time_xiug"></span></p>
+                    <div class="el-progress el-progress--line" style="display: none;">
+                        <div class="el-progress-bar">
+                            <div class="el-progress-bar__outer" style="height: 6px;">
+                                <div class="el-progress-bar__inner" style="width: 0%;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="el-progress__text" style="font-size: 14.4px;">0%</div>
+                    </div>
+                </div>
+                <p id="" class="center div_xc page">
+                    <img id="im_vid_xg" style="width: 40%;" src="images/register/zong.png" alt="">
+                    <video style="display: none;width: 100%;" poster controls="true"  id="video_xiug" ></video>
+                    <input id="fixiugvid" class="file" name="myfile" onchange="xiugladFile()" type="file" accept="video/*" mutiple="mutiple">
+                </p>
+                <p id="p_vid_ship"></p>
+            </div>
+        </section> 
+        <div class="div_tk">
+            <div class="tk_cont">
+                <p>资料已提交</p>
+                <p>审核需要1-2个工作日</p>
+                <p>请耐心等待！</p>
+                <button class="but_ok">好</button>
+            </div>
+        </div>       
+    </div>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title></title>
+</head>
+<body>
+    <div class="wrapper margTopX" id="zbrzthree">
+        <header class="head_vid margTopX">
+            <div class="center">
+                <p><i class="threeFan" id="p_fan"></i>主播认证</p>
+                <a data-t="Asub" class="A_next" href="javascript:void(0)">提交</a>
+            </div>
+        </header>
+        <section id="sec_renz" class="sec_zbrz">
+            <div class="div_renz">
+                <h3 class="H3_bu">简单三步完成认证:</h3>
+                <ul>
+                    <li class="w42">
+                        <p class="lef_7"><span class="rz_span">1</span><img class="im_one_tex" src="images/register/next.png" alt=""></p>
+                        <p class="zl_text">个人信息</p>
+                    </li>
+                    <li class="w42">
+                        <p class="lef_7"><span class="rz_span">2</span><img class="im_one_tex" src="images/register/next.png" alt=""></p>
+                        <p class="zl_text">认证类型</p>
+                    </li>
+                    <li class="w16">
+                        <p><span class="rz_span bacC8">3</span></p>
+                        <p class="zl_text colC8">审核材料</p>
+                    </li>
+                </ul>
+            </div>
+            <p class="p_clea"></p>
+            <div class="rz_cont">
+                <h3 class="H3_bu">绑定家族<span class="sp_next">(选填)</span></h3>
+                <p class="center input_jz"><input id="in_jzh" class="center inp_jzh" type="text" placeholder="伟大的家族号"></p>
+            </div>
+            <div class="rz_cont">
+                <h3 class="H3_bu">认证图片<span class="sp_next">(必填)</span></h3>
+                <div class="dp_img">
+                    <p class="w49 link p_lefd center">
+                        <img style="width: 40%;" id="onshows1" src="images/register/zongimg.png" alt="">
+                        <!-- <img src="images/register/zongimg.png" alt=""> -->
+                        <input id="onfile1" class="rz_file" onchange="ongepic(1)" type="file" accept="image/*" mutiple="mutiple">
+                    </p>
+                    <!-- <p class="w49 link">
+                        <img id="onshows2" src="images/register/heng.png" alt="">
+                        <input id="onfile2" class="rz_file" onchange="ongepic(2)" type="file" accept="image/*" mutiple="mutiple">
+                    </p> -->
+                </div>
+                <div class="div_xc">
+                    <p class="p_xcImg">相册&nbsp;&nbsp;(最多9张)</p>
+                    <ul class="link" style="padding-bottom: 10px;">
+                        <li id="uploali_img" class="li_img_xg">
+                            <img src="images/register/Add.png" alt="">
+                            <input class="loadImg file" type="file" accept="image/*" name="file" id="file">
+                        </li>
+                    </ul>
+                    <ul style="display: initial;" id="li_ul_Img">
+                    
+                    </ul>
+                    <p id="p_li_Img"></p>
+                </div>
+            </div>
+            <p class="p_clea"></p>
+            <div class="rz_cont pabot30">
+                <h3 class="H3_bu">认证视频<span id="sp_vid_ed" class="sp_next fr"><i class="fl i_wei i_but"></i>下次提交</span></h3>
+                <div id="content">
+                    <p class="_p"><span id="time"></span></p>
+                    <div class="el-progress el-progress--line" style="display: none;">
+                        <div class="el-progress-bar">
+                            <div class="el-progress-bar__outer" style="height: 6px;">
+                                <div class="el-progress-bar__inner" style="width: 0%;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="el-progress__text" style="font-size: 14.4px;">0%</div>
+                    </div>
+                </div>
+                <p class="center div_xc page">
+                    <img id="im_vid_no" style="width: 40%;" src="images/register/zong.png" alt="">
+                    <video style="display: none;width: 100%;" autoplay="autoplay" poster controls="true" webkit-playsinline='true' playsinline='true'  id="vidrz" ></video>
+                    <input id="filevid" class="file" name="myfile" onchange="UpladFile()" type="file" accept="video/*" mutiple="mutiple">
+                </p>
+                <p id="p_vid_ship"></p>
+            </div>
+        </section> 
+        <div class="div_tk">
+            <div class="tk_cont">
+                <p>资料已提交</p>
+                <p>审核需要1-2个工作日</p>
+                <p>请耐心等待！</p>
+                <button class="but_ok">好</button>
+            </div>
+        </div>       
+    </div>
+</body>
+</html>

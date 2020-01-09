@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title></title>
+</head>
+<body>
+    <div class="wrapper margTopX" id="publish">
+        <header class="head_vid margTopX">
+            <div class="center">
+                <p><i class="pubFan" id="p_fan"></i>发布动态</p>
+                <a id="pubAvid" data-t="Asubfs" class="A_next" href="javascript:void(0)">送出</a>
+            </div>
+        </header>
+        <section class="sec_pubil">
+            <textarea placeholder="分享你的故事..." maxlength="100" id="text_gxqm" cols="30" rows="10"></textarea>
+            <p class="prigh">(100字以内)</p>
+            <div class="div_zp">
+                <p class="p_zpsp">照片或视频</p>
+                <ul class="fl">
+                    <li id="uploadImgBtn" class="liColo center">
+                        <img style="width: 11px;" src="images/register/Add.png" alt="">
+                            <!-- <input class="uploadImg" type="file" onchange="chanpubils(this)" name="file" multiple id="file"> -->
+                            <input class="uploadImg" type="file" name="file" id="file">
+                        <!-- <input class="uploadImg" type="file" name="file"  mutiple id="file"> -->
+                    </li>
+                </ul>
+                <ul id="li_usImg">
+                    
+                </ul>
+                <video style="display: none;width: 100%;max-height: 480px;" poster controls="true" autoplay="autoplay"  id="viddt" src="images/video.mp4"></video>
+                <div id="content">
+                    <p class="_p"><span class="sp_tim_dy" id="times"></span></p>
+                    <!-- <div class="el-progress el-progress- -line" style="display: none;">
+                        <div class="el-progress-bar">
+                            <div class="el-progress-bar__outer" style="height: 6px;">
+                                <div class="el-progress-bar__inner" style="width: 0%;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="el-progress__text" style="font-size: 14.4px;">0%</div>
+                    </div> -->
+                </div>
+                <p id="p_noneImg"></p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
